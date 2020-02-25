@@ -1,6 +1,12 @@
 # fromCtoF
 A simple project and test of the Electron framework, a temperature converter from Celsius to Fahrenheit
 
+Dependecies
+You need:
+
+>Nodejs/npm  ```$ sudo apt install nodejs && sudo apt install npm```
+
+>Electron  ```$ npm i -D electron@latest```
 
 # Compiling and testing
 # Linux
@@ -22,9 +28,4 @@ Now to compile it
 $ npm run make 
 ```
 
-Dependecies
-You need:
-
->Nodejs/npm  ```$ sudo apt install nodejs && sudo apt install npm```
-
->Electron  ```$ npm i -D electron@latest```
+.deb and rpm executables will generate in out/make/ directory
