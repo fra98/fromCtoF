@@ -8,8 +8,7 @@ You need:
 
 >Electron  ```$ npm i -D electron@latest```
 
->rpm  
->Electron  ```$ sudo apt install rpm```
+>rpm  ```$ sudo apt install rpm```
 
 # Compiling and testing
 # Linux
