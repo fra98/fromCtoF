@@ -15,7 +15,7 @@ Choose one folder (i.e Documents)
 $ npx create-electron-app fromctof
 $ git clone https://github.com/fra98/fromCtoF
 ```
-Now in documents you'll find two folders, fromctof and fromCtoF, copy fromCtoF content to fromctof.
+In /Documents you'll find two folders, fromctof and fromCtoF, copy fromCtoF content to fromctof.
 
 Merge and replace any duplicate file
 
