@@ -29,4 +29,4 @@ Now to compile it
 $ npm run make 
 ```
 
-.deb and rpm executables will generate in out/make/ directory
+.deb and .rpm executables will generate in out/make/ directory
