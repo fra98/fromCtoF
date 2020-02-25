@@ -1,8 +1,7 @@
 # fromCtoF
 A simple project and test of the Electron framework, a temperature converter from Celsius to Fahrenheit
 
-Dependecies
-You need:
+Dependecies you need:
 
 >Nodejs/npm  ```$ sudo apt install nodejs && sudo apt install npm```
 
