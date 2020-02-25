@@ -22,6 +22,6 @@ $ npm run make
 Dependecies
 You need:
 
--Nodejs/npm  ```sudo apt install nodejs && sudo apt install npm```
+°Nodejs/npm  ```sudo apt install nodejs && sudo apt install npm```
 
--Electron  ```npm i -D electron@latest```
+°Electron  ```npm i -D electron@latest```
