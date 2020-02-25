@@ -30,3 +30,8 @@ $ npm run make
 ```
 
 .deb and .rpm executables will generate in out/make/ directory
+
+
+# Windows
+You need nodejs, npm and git added to your path, same procedure described above
+
