@@ -13,9 +13,12 @@ Now in documents you'll find two folders, fromctof and fromCtoF, copy fromCtoF c
 
 Merge and replace any duplicate file
 
-Now to run and compile it 
+Now to test it
 ```
-$ npm start --test it
+$ npm start
+```
+Now to compile it
+```
 $ npm run make 
 ```
 
