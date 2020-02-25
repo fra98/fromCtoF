@@ -8,6 +8,9 @@ You need:
 
 >Electron  ```$ npm i -D electron@latest```
 
+>rpm  
+>Electron  ```$ sudo apt install rpm```
+
 # Compiling and testing
 # Linux
 Choose one folder (i.e Documents)
