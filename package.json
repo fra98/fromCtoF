@@ -1,7 +1,7 @@
 {
   "name": "fromctof",
   "productName": "fromctof",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Un convertitore di temperatura da Celsius a Fahrenheit",
   "main": "src/index.js",
   "scripts": {
@@ -32,7 +32,8 @@
           },
           "platforms": [
             "darwin",
-            "win32"
+            "win32",
+            "linux"
           ]
         },
         {
