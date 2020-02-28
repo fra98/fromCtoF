@@ -10,15 +10,11 @@ Dependencies you need:
 >rpm          ```$ sudo apt install rpm```
 
 # Compiling and testing
-Choose one folder (i.e. Documents)
 ```
-$ npx create-electron-app fromctof
 $ git clone https://github.com/fra98/fromCtoF
+$ cd fromCtoF
+$ npm install
 ```
-In /Documents you'll find two folders, fromctof and fromCtoF, copy fromCtoF content to fromctof.
-
-Merge and replace any duplicate file
-
 Now to test it
 ```
 $ npm start
@@ -28,4 +24,4 @@ Now to compile it
 $ npm run make 
 ```
 
-Executables will generate in out/make/ directory
+Executables for your platform will generate in out/make/ directory
