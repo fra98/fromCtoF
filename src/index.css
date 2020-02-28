@@ -24,6 +24,7 @@ input[type=number] {
 }
 
 select, option {
+  cursor: pointer;
   background-color: #181818;
   border-color:white;
   border-radius: 20px;
@@ -44,6 +45,7 @@ input {
 }
 
 button {
+  cursor: pointer;
   background-color: #181818;
   border-color:white;
   border-radius: 20px;
