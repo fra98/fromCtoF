@@ -5,22 +5,26 @@
 
 <head>
     <link rel="stylesheet" href="index.css">
-    <h1 style="text-align:center">Convertitore Celsius/Fahrenheit</h1>
 </head>
 
 <body>
-    <div style="text-align:center" width:100%>
+    <div style="text-align:center; width:100%">
+        <h1 title="Fammi scenneeee">🌡️Convertitore Celsius/Fahrenheit🌡️</h1>
         <br>Inserisci la temperatura da convertire<br>
-        <input title="Inserisci qui la temperatura in celsius" placeholder="0" id="gradi" step="0.01" type="number" value="">
-        <br>Voglio convertire questa temperatura in <select id ="selection">
+        <input title="Inserisci qui la temperatura in celsius" placeholder="0" id="gradi" step="0.1" type="number"
+            value="">
+        <br><br>Voglio convertire questa temperatura in gradi
+        <select id="selection">
             <option value=""></option>
             <option value="C">Celsius</option>
             <option value="F">Fahrenheit</option>
-        </select>
-        <button onclick="displaytemp(document.getElementById('selection').value, document.getElementById('gradi').value)">Invia</button>
-        <p id="stampa"></p>
+        </select><br>
+        <button onclick="displaytemp(document.getElementById('selection').value, document.getElementById('gradi').value)">
+            Invia
+        </button>
+        <p style="font-size: large;" id="stampa"></p>
     </div>
-    <div title="Ciau shashina! <3" class="bottom">
+    <div title="Ciau shashina! ❤️" class="bottom">
         Applicazione creata tramite Electron da Francesco Milano 🤖
     </div>
 </body>

@@ -54,14 +54,20 @@ app.on('activate', () => {
 // code. You can also put them in separate files and import them here.
 
 function displaytemp(sel, grad) {
+  if (grad == 0) grad = 0;
+  if (sel == "") alert("Perfavore seleziona un'unità di misura");
   //alert("La temperatura in Fahrenheit è " + (celsius * 9/5 + 32));  mostra un messaggio a schermo con il risultato
   //document.getElementById('stampa').innerHTML = "La temperatura in gradi Fahrenheit è " + (celsius * 9 / 5 + 32) + "°F";
+  var fahr = grad * 9 / 5 + 32;
+  var cel = (grad - 32)*5/9;
+  fahr = fahr.toFixed(1);
+  cel = cel.toFixed(1);
   switch (sel) {
     case "F":
-      document.getElementById('stampa').innerHTML = grad + " gradi celsius sono " + (grad * 9 / 5 + 32) + " gradi fahrenheit.";
+      document.getElementById('stampa').innerHTML = grad + " gradi celsius sono " + fahr + " gradi fahrenheit.";
       break;
     case "C":
-      document.getElementById('stampa').innerHTML = grad + " gradi fahrenheit sono " + ((grad - 32)*5/9) + " gradi celsius.";
+      document.getElementById('stampa').innerHTML = grad + " gradi fahrenheit sono " + cel + " gradi celsius.";
       break;
   }
 };

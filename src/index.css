@@ -2,14 +2,12 @@ body {
   background-color: #181818;
   color:white;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  margin: auto;
-  max-width: 38rem;
-  padding: 2rem;
 }
 
 .bottom {
   position: fixed;
-  bottom: 0px;
+  bottom:0px;
+  width: 100%;
   text-align: center;
 }
 
@@ -25,6 +23,15 @@ input[type=number] {
   -moz-appearance:textfield;
 }
 
+select, option {
+  background-color: #181818;
+  border-color:white;
+  border-radius: 20px;
+  color:white;
+  text-align:center;
+  outline: none;
+}
+
 input {
   background-color: #181818;
   border-color:white;
@@ -37,8 +44,17 @@ input {
 }
 
 button {
-  margin-top:3%;
+  background-color: #181818;
+  border-color:white;
+  border-radius: 20px;
+  color:white;
+  text-align:center;
+  outline: none;
+  margin-top: 1%;
+  font-size:120%;
 }
+
+
 
 
 
