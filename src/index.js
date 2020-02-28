@@ -12,8 +12,8 @@ const createWindow = () => {
     webPreferences: {
       nodeIntegration: true
     },
-    minHeight:300,
-    minWidth:700,
+    minHeight: 300,
+    minWidth: 700,
     width: 700,
     height: 300,
   });
@@ -26,10 +26,6 @@ const createWindow = () => {
   mainWindow.setMenuBarVisibility(false);
 };
 
-function displayfar(celsius) {
-  //alert("La temperatura in Fahrenheit è " + (celsius * 9/5 + 32));  mostra un messaggio a schermo con il risultato
-  document.getElementById('stampa').innerHTML= "La temperatura in gradi Fahrenheit è " + (celsius * 9/5 + 32) +"°F";
-};
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
@@ -56,3 +52,16 @@ app.on('activate', () => {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and import them here.
+
+function displaytemp(sel, grad) {
+  //alert("La temperatura in Fahrenheit è " + (celsius * 9/5 + 32));  mostra un messaggio a schermo con il risultato
+  //document.getElementById('stampa').innerHTML = "La temperatura in gradi Fahrenheit è " + (celsius * 9 / 5 + 32) + "°F";
+  switch (sel) {
+    case "F":
+      document.getElementById('stampa').innerHTML = grad + " gradi celsius sono " + (grad * 9 / 5 + 32) + " gradi fahrenheit.";
+      break;
+    case "C":
+      document.getElementById('stampa').innerHTML = grad + " gradi fahrenheit sono " + ((grad - 32)*5/9) + " gradi celsius.";
+      break;
+  }
+};

@@ -4,6 +4,7 @@
   "version": "0.0.2",
   "description": "Un convertitore di temperatura da Celsius a Fahrenheit",
   "main": "src/index.js",
+  "repository": {"url": "https://github.com/fra98/fromCtoF"},
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",

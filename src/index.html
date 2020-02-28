@@ -5,13 +5,19 @@
 
 <head>
     <link rel="stylesheet" href="index.css">
-    <h1 style="text-align:center">Un convertitore da gradi Celsius a Fahrenheit</h1>
+    <h1 style="text-align:center">Convertitore Celsius/Fahrenheit</h1>
 </head>
 
 <body>
-    <div style="text-align:center">
-        <br>Inserisci la temperatura in gradi Celsius <br>
-        <input title="Inserisci qui la temperatura in celsius" onchange="displayfar(document.getElementById('gradi').value);" id="gradi" step="0.01" type="number" value="">
+    <div style="text-align:center" width:100%>
+        <br>Inserisci la temperatura da convertire<br>
+        <input title="Inserisci qui la temperatura in celsius" placeholder="0" id="gradi" step="0.01" type="number" value="">
+        <br>Voglio convertire questa temperatura in <select id ="selection">
+            <option value=""></option>
+            <option value="C">Celsius</option>
+            <option value="F">Fahrenheit</option>
+        </select>
+        <button onclick="displaytemp(document.getElementById('selection').value, document.getElementById('gradi').value)">Invia</button>
         <p id="stampa"></p>
     </div>
     <div class="bottom">
