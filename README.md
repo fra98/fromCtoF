@@ -10,7 +10,7 @@ Dependencies you need:
 >rpm  ```$ sudo apt install rpm```
 
 # Compiling and testing
-Choose one folder (i.e Documents)
+Choose one folder (i.e. Documents)
 ```
 $ npx create-electron-app fromctof
 $ git clone https://github.com/fra98/fromCtoF
