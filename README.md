@@ -3,11 +3,14 @@ Simple project to test and try the Electron framework, a temperature converter f
 
 Dependencies you need:
 
->Nodejs/npm   ```$ sudo apt install nodejs && sudo apt install npm```
++ Nodejs/npm
+```$ sudo apt install nodejs && sudo apt install npm```
 
->Electron     ```$ npm i -D electron@latest```
++ Electron
+```$ npm i -D electron@latest```
 
->rpm          ```$ sudo apt install rpm```
++ rpm  
+```$ sudo apt install rpm```
 
 # Compiling and testing
 ```
