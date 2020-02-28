@@ -10,7 +10,6 @@ Dependencies you need:
 >rpm  ```$ sudo apt install rpm```
 
 # Compiling and testing
-# Ubuntu / Debian
 Choose one folder (i.e Documents)
 ```
 $ npx create-electron-app fromctof
@@ -29,9 +28,4 @@ Now to compile it
 $ npm run make 
 ```
 
-.deb and .rpm executables will generate in out/make/ directory
-
-
-# Windows
-You need nodejs, npm and git added to your path, same procedure described above
-
+Executables will generate in out/make/ directory
