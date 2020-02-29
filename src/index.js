@@ -12,10 +12,10 @@ const createWindow = () => {
     webPreferences: {
       nodeIntegration: true
     },
-    minHeight: 400,
+    minHeight: 440,
     minWidth: 700,
     width: 700,
-    height: 400,
+    height: 440,
   });
 
   // and load the index.html of the app.
