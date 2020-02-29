@@ -1,7 +1,11 @@
 # fromCtoF
 Simple project to test and try the Electron framework, a temperature converter from Celsius to Fahrenheit
 
-Dependencies you need:
+# ToDo list
++ implement other unit measures
++ add app icon
+
+# Dependencies:
 
 + Nodejs/npm
 
