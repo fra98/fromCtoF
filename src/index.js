@@ -12,10 +12,10 @@ const createWindow = () => {
     webPreferences: {
       nodeIntegration: true
     },
-    minHeight: 350,
+    minHeight: 400,
     minWidth: 700,
     width: 700,
-    height: 350,
+    height: 400,
   });
 
   // and load the index.html of the app.
@@ -52,22 +52,3 @@ app.on('activate', () => {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and import them here.
-
-function displaytemp(sel, grad) {
-  if (grad == 0) grad = 0;
-  if (sel == "") alert("Perfavore seleziona un'unità di misura");
-  //alert("La temperatura in Fahrenheit è " + (celsius * 9/5 + 32));  mostra un messaggio a schermo con il risultato
-  //document.getElementById('stampa').innerHTML = "La temperatura in gradi Fahrenheit è " + (celsius * 9 / 5 + 32) + "°F";
-  var fahr = grad * 9 / 5 + 32;
-  var cel = (grad - 32)*5/9;
-  fahr = fahr.toFixed(1);
-  cel = cel.toFixed(1);
-  switch (sel) {
-    case "F":
-      document.getElementById('stampa').innerHTML = grad + " gradi celsius sono " + fahr + " gradi fahrenheit.";
-      break;
-    case "C":
-      document.getElementById('stampa').innerHTML = grad + " gradi fahrenheit sono " + cel + " gradi celsius.";
-      break;
-  }
-};

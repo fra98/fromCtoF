@@ -1,7 +1,80 @@
-body {
+.bodydark {
   background-color: #181818;
   color:white;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.bodylight {
+  background-color: white;
+  color:black;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+
+.optionlight {
+  cursor: pointer;
+  background-color: white;
+  border-color:black;
+  border-radius: 20px;
+  color:black;
+  text-align:center;
+  outline: none;
+}
+
+.optiondark {
+  cursor: pointer;
+  background-color: #181818;
+  border-color:white;
+  border-radius: 20px;
+  color:white;
+  text-align:center;
+  outline: none;
+}
+
+.inputdark{
+  background-color: #181818;
+  border-color:white;
+  border-radius: 20px;
+  color:white;
+  text-align:center;
+  margin-top:1%;
+  font-size:130%;
+  outline: none;
+}
+
+.inputlight{
+  background-color: white;
+  border-color:black;
+  border-radius: 20px;
+  color:black;
+  text-align:center;
+  margin-top:1%;
+  font-size:130%;
+  outline: none;
+}
+
+.buttondark {
+  cursor: pointer;
+  background-color: #181818;
+  border-color:white;
+  border-radius: 20px;
+  color:white;
+  text-align:center;
+  outline: none;
+  margin-top: 1%;
+  font-size:120%;
+}
+
+.buttonlight {
+  cursor: pointer;
+  background-color:white;
+  border-color:black;
+  border-radius: 20px;
+  color:black;
+  text-align:center;
+  outline: none;
+  margin-top: 1%;
+  font-size:120%;
 }
 
 .bottom {
@@ -22,41 +95,3 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance:textfield;
 }
-
-select, option {
-  cursor: pointer;
-  background-color: #181818;
-  border-color:white;
-  border-radius: 20px;
-  color:white;
-  text-align:center;
-  outline: none;
-}
-
-input {
-  background-color: #181818;
-  border-color:white;
-  border-radius: 20px;
-  color:white;
-  text-align:center;
-  margin-top:1%;
-  font-size:130%;
-  outline: none;
-}
-
-button {
-  cursor: pointer;
-  background-color: #181818;
-  border-color:white;
-  border-radius: 20px;
-  color:white;
-  text-align:center;
-  outline: none;
-  margin-top: 1%;
-  font-size:120%;
-}
-
-
-
-
-

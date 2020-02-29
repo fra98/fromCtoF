@@ -5,24 +5,30 @@
 
 <head>
     <link rel="stylesheet" href="index.css">
+    <script src ="main.js"></script>
 </head>
 
-<body>
+<body class="bodydark">
     <div style="text-align:center; width:100%">
-        <h1 title="Fammi scenneeee">🌡️Convertitore Celsius/Fahrenheit🌡️</h1>
+        <div style="width:100%">
+            <div style="text-align: right;">
+                <button class=" buttondark" id="mode" onclick="changemode(document.getElementById('mode').innerHTML)">🌙</button>
+            </div>
+            <h1 title="Fammi scenneeee">🌡️Convertitore Celsius/Fahrenheit🌡️</h1>
+        </div>
         <br>Inserisci la temperatura da convertire<br>
-        <input placeholder="0" id="gradi" step="0.1" type="number"
-            value="">
+        <input class="inputdark" placeholder="0" id="gradi" step="0.1" type="number" value="">
         <br><br>Voglio convertire questa temperatura in gradi
-        <select id="selection">
-            <option value=""></option>
-            <option value="C">Celsius</option>
-            <option value="F">Fahrenheit</option>
+        <select class="optiondark" id="selection">
+            <option class="optiondark" value=""></option>
+            <option class="optiondark" value="C">Celsius</option>
+            <option class="optiondark" value="F">Fahrenheit</option>
         </select><br>
-        <button onclick="displaytemp(document.getElementById('selection').value, document.getElementById('gradi').value)">
+        <button class="buttondark" onclick="displaytemp(document.getElementById('selection').value, document.getElementById('gradi').value)">
             Invia
-        </button>
-        <p style="font-size: large;" id="stampa"></p>
+        </button><br><br>
+        <p style="display:inline;font-size:large" id="stampa"></p>
+        <p style="display:inline;font-size:200%" id="emoji"></p>
     </div>
     <div title="Ciau shashina! ❤️" class="bottom">
         Applicazione creata tramite Electron da Francesco Milano 🤖
