@@ -13,6 +13,7 @@
 
 .optionlight {
   cursor: pointer;
+  border:solid;
   background-color: white;
   border-color:black;
   border-radius: 20px;
@@ -23,6 +24,7 @@
 
 .optiondark {
   cursor: pointer;
+  border:solid;
   background-color: #181818;
   border-color:white;
   border-radius: 20px;
@@ -32,6 +34,7 @@
 }
 
 .inputdark{
+  border:solid;
   background-color: #181818;
   border-color:white;
   border-radius: 20px;
@@ -43,6 +46,7 @@
 }
 
 .inputlight{
+  border:solid;
   background-color: white;
   border-color:black;
   border-radius: 20px;
@@ -55,6 +59,7 @@
 
 .buttondark {
   cursor: pointer;
+  border:solid;
   background-color: #181818;
   border-color:white;
   border-radius: 20px;
@@ -67,6 +72,7 @@
 
 .buttonlight {
   cursor: pointer;
+  border:solid;
   background-color:white;
   border-color:black;
   border-radius: 20px;
@@ -84,9 +90,13 @@
   text-align: center;
 }
 
-tr, th, td {
+td {
+  padding:10px;
+  border: 1;
+  border:solid;
   text-align:center;
   width:33.33%;
+  border-radius: 20px;
 }
 
 table {
@@ -94,8 +104,6 @@ table {
   margin-right:auto;
   margin-top:2%;
   width:auto;
-  border:solid;
-  border-radius: 20px;
 }
 
 /* Chrome, Safari, Edge, Opera */

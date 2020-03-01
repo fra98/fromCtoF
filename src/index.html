@@ -1,11 +1,10 @@
-<script src="index.js"></script>
 <!DOCTYPE html>
 <meta charset="utf-8">
 <html>
 
 <head>
     <link rel="stylesheet" href="index.css">
-    <script src ="main.js"></script>
+    <script src="modules.js"></script>
 </head>
 
 <body class="bodydark">
@@ -18,16 +17,12 @@
         </div>
         <br>Inserisci la temperatura da convertire<br>
         <input class="inputdark" placeholder="0" id="gradi" step="0.1" type="number" value="">
-        <br><br>La temperatura che ho inserito è in gradi
-        <select class="optiondark" id="selection">
+        <select class="optiondark" id="selection" onchange="displaytemp(document.getElementById('selection').value, document.getElementById('gradi').value)">
             <option class="optiondark" value=""></option>
             <option class="optiondark" value="C">Celsius</option>
             <option class="optiondark" value="F">Fahrenheit</option>
             <option class="optiondark" value="K">Kelvin</option>
         </select><br>
-        <button class="buttondark" onclick="displaytemp(document.getElementById('selection').value, document.getElementById('gradi').value)">
-            Invia
-        </button>
         <p style="display:inline;font-size:large" id="stampa"></p>
         <p style="display:inline;font-size:200%" id="emoji"></p>
     </div>
@@ -35,7 +30,4 @@
         Applicazione creata tramite Electron da Francesco Milano 🤖
     </div>
 </body>
-
-
-
 </html>

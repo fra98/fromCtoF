@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="modules.js"></script>
+    </head>
+
+    <body>
+        Usa tema nero di default: <input type="checkbox" id="checkblack">
+        <button onclick="window.close()" id ="savebtn">Salva</button>
+    </body>
+</html>
+<script type="text/javascript">
+ 
+    // include the ipc module to communicate with main process.
+    const ipcRenderer = require('electron').ipcRenderer; 
+     
+    const saveclick = document.getElementById('savebtn');
+    const darkconfig = document.getElementById('darkmode').value;
+    saveclick.addEventListener('click', function () { 
+       //send the info to main process . we can pass any arguments as second param.
+        ipcRenderer.send("darkconfig"); // ipcRender.send will pass the information to main process
+    });
+</script>

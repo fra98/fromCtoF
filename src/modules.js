@@ -32,10 +32,10 @@ function displaytemp(sel, grad) {
     fahr = parseFloat(fahr.toFixed(1));
     document.getElementById('stampa').innerHTML = 
     "<table>" +
-    "<tr><th>Celsius</th><th>Kelvin</th><th>Fahrenheit</th></tr>" +
-    "<tr><td>" + cel + "°C</td><td>" + kel + "°K</td><td>" + fahr + "°F</td></tr>" +
+    "<tr><th style=\"border-color:#d61a1f;color:#d61a1f\">Celsius</th><th style=\"border-color:#4cd63f;color:#4cd63f\">Kelvin</th><th style=\"border-color:#3f5ad6;color:#3f5ad6\">Fahrenheit</th></tr>" +
+    "<tr><td style=\"color:#d61a1f\">" + cel + "°C</td><td style=\"color:#4cd63f\">" + kel + "°K</td><td style=\"color:#3f5ad6\">" + fahr + "°F</td></tr>" +
     "</table>";
-  };
+};
 
 function changemode(mode) {
     switch (mode) {
@@ -99,9 +99,4 @@ function changemode(mode) {
         document.getElementById('mode').innerHTML = "🌙";
         break;
     }
-  };
-
-function main() {
-  parseconfig();
-  return;
-}
+};
