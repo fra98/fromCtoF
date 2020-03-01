@@ -12,6 +12,7 @@
 
 
 .optionlight {
+  font-size:130%;
   cursor: pointer;
   border:solid;
   background-color: white;
@@ -23,6 +24,7 @@
 }
 
 .optiondark {
+  font-size:130%;
   cursor: pointer;
   border:solid;
   background-color: #181818;
