@@ -2,7 +2,7 @@
 Simple project to test and try the Electron framework, a temperature converter from Celsius to Fahrenheit
 
 # ToDo list
-+ implement other unit measures
++ Adding Kelvin
 + add app icon
 
 # Dependencies:
