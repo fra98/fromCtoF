@@ -2,8 +2,8 @@
 Simple project to test and try the Electron framework, a temperature converter from Celsius to Fahrenheit
 
 # ToDo list
-+ Adding Kelvin
-+ add app icon
+-  [x] Adding Kelvin
+-  [ ] add app icon
 
 # Dependencies:
 
