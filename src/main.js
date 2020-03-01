@@ -6,25 +6,35 @@ function displaytemp(sel, grad) {
     }
     //alert("La temperatura in Fahrenheit è " + (celsius * 9/5 + 32));  mostra un messaggio a schermo con il risultato
     //document.getElementById('stampa').innerHTML = "La temperatura in gradi Fahrenheit è " + (celsius * 9 / 5 + 32) + "°F";
-    var fahr = grad * 9 / 5 + 32;
-    var cel = (grad - 32) * 5 / 9;
-    var celsius;
-    if (sel == "F") celsius = grad;
-    else celsius = cel;
-    document.getElementById('emoji').innerHTML = "";
-    if (celsius <= 0) document.getElementById('emoji').innerHTML ="   🥶";
-    if (celsius >= 35) document.getElementById('emoji').innerHTML ="   🥵";
-    fahr = fahr.toFixed(1);
-    cel = cel.toFixed(1);
+    var fahr;
+    var cel;
+    var kel;
+    grad = parseFloat(grad);
     switch (sel) {
       case "F":
-        document.getElementById('stampa').innerHTML = grad + " gradi celsius sono " + fahr + " gradi fahrenheit.";
+        cel = (grad - 32) * 5 / 9;
+        kel = (grad - 32) * 5/9 + 273.15;
+        fahr = grad;
         break;
       case "C":
-        document.getElementById('stampa').innerHTML = grad + " gradi fahrenheit sono " + cel + " gradi celsius.";
+        fahr = grad * 9 / 5 + 32;
+        kel = grad + 273.15;
+        cel = grad;
+        break;
+      case "K":
+        kel = grad;
+        cel = grad - 273.15;
+        fahr = (grad + 32*5/9 - 273.15) / (5/9);
         break;
     }
-  
+    kel = parseFloat(kel.toFixed(1));
+    cel = parseFloat(cel.toFixed(1));
+    fahr = parseFloat(fahr.toFixed(1));
+    document.getElementById('stampa').innerHTML = 
+    "<table>" +
+    "<tr><th>Celsius</th><th>Kelvin</th><th>Fahrenheit</th></tr>" +
+    "<tr><td>" + cel + "°C</td><td>" + kel + "°K</td><td>" + fahr + "°F</td></tr>" +
+    "</table>";
   };
 
 function changemode(mode) {
@@ -90,3 +100,8 @@ function changemode(mode) {
         break;
     }
   };
+
+function main() {
+  parseconfig();
+  return;
+}
