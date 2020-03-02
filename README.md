@@ -4,6 +4,7 @@ Simple project to test and try the Electron framework, a temperature converter f
 # ToDo list
 -  [x] Implement Kelvin conversion
 -  [ ] Add app icon
+-  [ ] Option to choose default theme mode
 
 # Dependencies:
 
