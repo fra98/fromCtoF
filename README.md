@@ -20,17 +20,17 @@ Simple project to test and try the Electron framework, a temperature converter f
 
 ```$ sudo apt install rpm```
 
-# Compiling and testing
+# Download source files and install node_modules
 ```
 $ git clone https://github.com/fra98/fromCtoF
 $ cd fromCtoF
 $ npm install
 ```
-Now to test it
+# Testing
 ```
 $ npm start
 ```
-Now to compile it
+# Compiling
 ```
 $ npm run make 
 ```
