@@ -1,8 +1,8 @@
 # fromCtoF
 Simple project to test and try the Electron framework, a temperature converter
 
-![Screenshot1](https://i.imgur.com/U9b6bmT.png)
-
+![Screenshot1](https://i.imgur.com/CGs7BKV.png)
+![Screenshot2](https://i.imgur.com/Sno95kQ.png)
 
 # ToDo list
 -  [x] Implement Kelvin conversion
