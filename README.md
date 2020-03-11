@@ -1,5 +1,5 @@
 # fromCtoF
-Simple project to test and try the Electron framework, a temperature converter from Celsius to Fahrenheit
+Simple project to test and try the Electron framework, a temperature converter
 
 ![Screenshot1](https://i.imgur.com/U9b6bmT.png)
 
