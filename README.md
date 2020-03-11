@@ -25,7 +25,7 @@ Simple project to test and try the Electron framework, a temperature converter
 
 # Download source files and install node_modules
 ```
-$ git clone https://github.com/fra98/fromCtoF
+$ git clone https://github.com/framilano/fromCtoF
 $ cd fromCtoF
 $ npm install
 ```
